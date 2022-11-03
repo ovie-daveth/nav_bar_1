@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* =================================================================
+Typography ===================*/
+
+h1{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#143774;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-weight: 700;
+    color: #1792D2;
+    font-size: .75rem;
+    margin-top: 0;
+}
+
+/* =================================================================
+Layout ===================*/
+
+
+
+header{
+    text-align: center;
+    background-color: #F8F8F8;
+    padding: 2em 0;
+    margin-bottom: 5%;
+}
+.nav-list, .nav-list-1{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-list-item, .nav-list-item-1{
+    list-style-type: none;
+    margin: 0 1em;
+}
+.nav-link:hover,
+ .nav-link:focus{
+    color: #1792d2;
+    border: 1px solid #707070;
+    padding: 0.2em 0.5em;
+}
+#active{
+    border-bottom: 1px solid #707070;
+
+}
+#active:hover{
+    color: #707070;
+}
+.nav-link{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+    transition: 0.7s ease;
+}
+
+/* SEcond header */
+
+.header{
+    background-color: #F8F8F8;
+    
+    
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 980px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+        background-color: #F8F8F8;
+        padding: 2em 0;
+        width: 100%;
+        transition: 1s;
+    }
+
+    
+}
+
+/* Third navbar with javascript */
+
+.container-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 980px){
+    .container-1{
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 0;
+        width: 100%;
+        transition: 1s;
+    }
+}
+
+.menu, .close{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 980px){
+    .menu{
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: 50px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .nav-list-1{
+        position:fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #F8F8F8;
+        width: 100px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-list-item-1{
+        margin: 16px 0;
+    }
+    .nav-list-1.active{
+        position: relative;
+        left: 5px;
+        top: -5px;
+    }
+}
