@@ -146,10 +146,9 @@ header{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #F8F8F8;
         width: 100px;
         text-align: center;
-        transition: 0.3s;
+    
     }
     .nav-list-item-1{
         margin: 16px 0;
@@ -158,5 +157,9 @@ header{
         position: relative;
         left: 40%;
         top: -5px;
+    }
+    .nav-bar{
+        background-color: #4973bda1;
+        height: 100%;
     }
 }
